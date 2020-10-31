@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>生日禮物</title>
+		<title>\生日禮物HBD/</title>
 		<link rel="stylesheet" href="./css/hovertree.css" />
 	</head>
 	<body>
@@ -26,22 +26,23 @@
 			<h3>2020.10.31</h3>
 			</marquee>
 		</div>
-		<!--/*外层最大容器*/-->
+		<!--/*outside*/-->
 		<div class="wrap">
-			<!--	/*包裹所有元素的容器*/-->
+			<!--	/*container*/-->
 			<div class="cube">
-				<!--前面图片 -->
+				<!--front -->
 				<div class="out_front">
 					<img src="img/img01.JPG " class="pic" />
 				</div>
-				<!--后面图片 -->
+				<!--back -->
 				<div class="out_back">
 					<img src="img/img02.JPG" class="pic"/>
 				</div>
-				<!--左图片 -->
+				<!--left -->
 				<div class="out_left">
 					<img src="img/img03.JPG" class="pic" />
 				</div>
+				<!--right -->
 				<div class="out_right">
 					<img src="img/img04.JPG" class="pic" />
 				</div>
@@ -51,7 +52,7 @@
 				<div class="out_bottom">
 					<img src="img/img06.JPG" class="pic" />
 				</div>
-				<!--小正方体 -->
+				<!--small cube -->
 				<span class="in_front">
 					<img src="img/img07.JPG" class="in_pic" />
 				</span>
@@ -91,7 +92,7 @@
 			document.addEventListener("WeixinJSBridgeReady", function () {    
 				  music.play();
 			  }, false);  
-			//循环播放
+			//loop
 			music.onended = function () {    
 				music.load();    
 				music.play();
