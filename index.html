@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>生日禮物</title>
+		<link rel="stylesheet" href="./css/hovertree.css" />
+	</head>
+	<body>
+		<div class="hovertreeinfo">
+			<h2>曾毅寶貝生日快樂</h2>
+			<marquee direction="up" width="500" height="80" scrollamount="1">
+			<h3>不知道你會不會喜歡這個小禮物...這是我之前滑抖音無意間看到覺得還不錯的東西，想說至少看起來蠻厲害的嘿嘿嘿。</h3>
+			<h3>(但以後會少滑...不然感覺自己越來越智障QQQ)</h3>
+			<h3>對了，貼心提醒，可以搭配音樂一起喔!!!</h3>
+			<h3>好了!正文開始</h3>
+			<h3>翻了好久的照片，又強行回憶了一遍這快樂的一年，才驚覺我們的合照真的好少...</h3>
+			<h3>這大概也是這一年最遺憾的事情吧。一起去了很多地方，幫你拍很多照片，卻沒有留下"我們"</h3>
+			<h3>回家的這段時間，每天都很想念你，想著如果現在在英國我們會做什麼，想著明明才過了幾天怎麼世界就不一樣了。</h3>
+			<h3>好恨這個疫情，卻同時在lockdown期間慶幸著，因為疫情，可以更理所當然的住你家，甚至搬到deaconess；因為疫情，可以完全獨佔你，享受兩個人的時光 。</h3>
+			<h3>但是回家後又很希望疫情快點結束，因為這變成我們兩個見面的阻礙，只能遠望著遙遙無期那下次見面的約定...</h3>
+			<h3>Hannah會在這段期間努力充實自己，並說服父母親人，讓他們能接受你，也希望yi不會放棄我們之間的感情。</h3>
+			<h3>最後，祝你天天開心，雖然無法陪伴在你身邊，但只要我們心在一起，距離絕對不是問題的。</h3>
+			</marquee>
+		</div>
+		<!--/*外层最大容器*/-->
+		<div class="wrap">
+			<!--	/*包裹所有元素的容器*/-->
+			<div class="cube">
+				<!--前面图片 -->
+				<div class="out_front">
+					<img src="img/img01.jpg " class="pic" />
+				</div>
+				<!--后面图片 -->
+				<div class="out_back">
+					<img src="img/img02.jpg" class="pic"/>
+				</div>
+				<!--左图片 -->
+				<div class="out_left">
+					<img src="img/img03.jpg" class="pic" />
+				</div>
+				<div class="out_right">
+					<img src="img/img04.jpg" class="pic" />
+				</div>
+				<div class="out_top">
+					<img src="img/img05.jpg" class="pic" />
+				</div>
+				<div class="out_bottom">
+					<img src="img/img06.jpg" class="pic" />
+				</div>
+				<!--小正方体 -->
+				<span class="in_front">
+					<img src="img/img07.jpg" class="in_pic" />
+				</span>
+				<span class="in_back">
+					<img src="img/img08.jpg" class="in_pic" />
+				</span>
+				<span class="in_left">
+					<img src="img/img09.jpg" class="in_pic" />
+				</span>
+				<span class="in_right">
+					<img src="img/img10.jpg" class="in_pic" />
+				</span>
+				<span class="in_top">
+					<img src="img/img11.jpg" class="in_pic" />
+				</span>
+				<span class="in_bottom">
+					<img src="img/img12.jpg" class="in_pic" />
+				</span>
+			</div>
+		</div>
+
+
+		<div style="position:absolute;left:0px;bottom:0px;">
+			<audio autoplay="autopaly" loop="loop" controls="controls" id="audios">
+				<source src="music/八三夭_-_想見你想見你想見你.mp3" type="audio/mp3" />
+			</audio>
+		</div>
+		<script>
+			var music = document.getElementById('video');
+			var state = 0;
+			document.addEventListener('touchstart', function(){    
+				  if(state==0){        
+					  music.play();        
+					  state=1;    
+				  }  
+			  }, false);
+			document.addEventListener("WeixinJSBridgeReady", function () {    
+				  music.play();
+			  }, false);  
+			//循环播放
+			music.onended = function () {    
+				music.load();    
+				music.play();
+			}    
+		</script>
+	</body>
+</html>
