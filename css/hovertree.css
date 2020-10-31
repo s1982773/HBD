@@ -1,5 +1,5 @@
 html{
-	background-image: src="img/bg.jpg";
+	background-image: url('img/bg.jpg');
 	background-size: cover;
     height: 100%;
     color:#540d1c;
